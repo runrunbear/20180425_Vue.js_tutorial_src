@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="bower_components/vue/dist/vue.js"></script>
+	<style>
+	</style>
+</head>
+<body>
+	<div id="box">
+		<my-aaa></my-aaa>
+	</div>
+
+	<script>
+		Vue.component('my-aaa',{
+			template:'<strong>好</strong>'
+		});
+
+		var vm=new Vue({
+			el:'#box'
+		});
+
+	</script>
+</body>
+</html>

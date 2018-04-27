@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="bower_components/vue/dist/vue.js"></script>
+	<style>
+	</style>
+</head>
+<body>
+	<div id="box">
+		<aaa></aaa>
+	</div>
+
+	<script>
+		var Aaa=Vue.extend({
+			template:'<h3>我是标题3</h3>'
+		});
+
+		Vue.component('aaa',Aaa);
+
+
+		var vm=new Vue({
+			el:'#box',
+			data:{
+				bSign:true
+			}
+		});
+
+	</script>
+</body>
+</html>
